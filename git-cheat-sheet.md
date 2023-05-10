@@ -17,5 +17,7 @@ git push origin --delete your-branch-name         # delete remote branch
 
 ### Create branch and set upstream remote
 
+```
 git checkout -b your-branch-name
 git push -u origin your-branch-name
+```
