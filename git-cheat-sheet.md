@@ -46,6 +46,14 @@ git log --branches --not --remotes
 git config --global --list
 ```
 
+#### Undo commit(s)
+
+```
+git reset --hard HEAD^                # remove previous commit from local branch
+git reset --hard HEAD~2               # remove previous two commits from local branch
+
+git push origin +HEAD                 # force push local branch with reverted commit to remote
+```
 
 
 
