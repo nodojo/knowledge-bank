@@ -27,3 +27,9 @@ git push -u origin your-branch-name
 ```
 git shortlog -s -n
 ```
+
+### Open .gitconfig in Notepad (Windows)
+
+```
+start ~/.gitconfig
+```
