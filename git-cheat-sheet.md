@@ -33,3 +33,24 @@ git shortlog -s -n
 ```
 start ~/.gitconfig
 ```
+
+#### List all local commits that haven't been pushed to remote
+
+```
+git log --branches --not --remotes
+```
+
+#### List configs from global .gitconfig
+
+```
+git config --global --list
+```
+
+
+
+
+
+
+
+
+
