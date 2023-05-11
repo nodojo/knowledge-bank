@@ -21,3 +21,9 @@ git push origin --delete your-branch-name         # delete remote branch
 git checkout -b your-branch-name
 git push -u origin your-branch-name
 ```
+
+### Display commit count by user
+
+```
+git shortlog -s -n
+```
