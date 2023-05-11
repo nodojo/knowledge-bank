@@ -22,6 +22,12 @@ git checkout -b your-branch-name
 git push -u origin your-branch-name
 ```
 
+#### Update branch with new changes on master (includes rebase)
+
+```
+git checkout master && git pull && git checkout your-branch-name && git rebase master
+```
+
 #### Undo commit(s)
 
 ```
