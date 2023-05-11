@@ -22,16 +22,19 @@ git checkout -b your-branch-name
 git push -u origin your-branch-name
 ```
 
+#### Undo commit(s)
+
+```
+git reset --hard HEAD^                # remove previous commit from local branch
+git reset --hard HEAD~2               # remove previous two commits from local branch
+
+git push origin +HEAD                 # force push local branch with reverted commit to remote
+```
+
 #### Display commit count by user
 
 ```
 git shortlog -s -n
-```
-
-#### Open .gitconfig in Notepad (Windows)
-
-```
-start ~/.gitconfig
 ```
 
 #### List all local commits that haven't been pushed to remote
@@ -46,16 +49,17 @@ git log --branches --not --remotes
 git config --global --list
 ```
 
-#### Undo commit(s)
+#### Open .gitconfig in Notepad (Windows)
 
 ```
-git reset --hard HEAD^                # remove previous commit from local branch
-git reset --hard HEAD~2               # remove previous two commits from local branch
-
-git push origin +HEAD                 # force push local branch with reverted commit to remote
+start ~/.gitconfig
 ```
 
+#### Set config so you only push to branch on which you are working
 
+```
+git config --global push.default current
+```
 
 
 
