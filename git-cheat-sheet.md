@@ -82,9 +82,9 @@ git config --global --unset alias.st
 #### Change to a new remote origin
 
 ```
-git remote -v                                                                       # display current fetch / pull origins
-git remote set-url origin git@github.com:acst/DecisionInsite.Maps.git               # set remote to new origin
-git remote -v                                                                       # verify remote origins have been properly set
+git remote -v                                                                 # display current fetch / pull origins
+git remote set-url origin git@github.com:acst/DecisionInsite.Maps.git         # set remote to new origin
+git remote -v                                                                 # verify remote origins have been properly set
 ```
 
 
