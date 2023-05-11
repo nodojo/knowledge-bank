@@ -67,6 +67,18 @@ start ~/.gitconfig
 git config --global push.default current
 ```
 
+#### Add alias to .gitconfig
+
+```
+git config --global alias.st status                   # example changing status to st (git status becomes git st)
+```
+
+#### Remove alias from .gitconfig
+
+```
+git config --global --unset alias.st
+```
+
 #### Change to a new remote origin
 
 ```
