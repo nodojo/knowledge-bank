@@ -149,6 +149,47 @@ git remote set-url origin git@github.com:repo-name-goes-here
 git remote -v
 ```
 
+## Manage tags
+
+#### List local tags
+
+```bash
+git tag
+```
+
+#### Edit tag and create new tag containing your changes
+
+1. Create a new branch from tag
+
+```bash
+git checkout -b your-new-branch-name existing-tag-name
+```
+
+2. Make and commit your edits
+
+3. Create a new tag containing your changes
+
+```bash
+git tag -a -m 'new tag message goes here' your-new-tag-name
+```
+
+4. Push the newly created tag to the remote repository
+
+```bash
+git push origin your-new-tag-name
+```
+
+#### Delete local tag
+
+```bash
+git tag -d your-tag-name
+```
+
+#### Delete remote tag
+
+```bash
+git push --delete origin your-tag-name
+```
 
 
 
