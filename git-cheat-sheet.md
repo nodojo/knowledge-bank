@@ -40,7 +40,7 @@ git checkout -b your-branch-name
 git push -u origin your-branch-name
 ```
 
-## Update branch with new changes on master (includes rebase)
+## Update branch with changes from master then rebase
 
 ```
 git checkout master && git pull && git checkout your-branch-name && git rebase master
