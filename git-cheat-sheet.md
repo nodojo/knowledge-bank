@@ -126,7 +126,7 @@ git config --global push.default current
 #### Add alias to .gitconfig
 
 ```
-git config --global alias.st status                   # example changes status to st (git status becomes git st)
+git config --global alias.st status                   # this example changes status to st (git status becomes git st)
 ```
 
 #### Remove alias from .gitconfig
