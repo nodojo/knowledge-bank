@@ -37,6 +37,17 @@ git reset --hard HEAD~2               # remove previous two commits from local b
 git push origin +HEAD                 # force push local branch with reverted commit to remote
 ```
 
+#### Undo then redo a commit
+
+```
+git reset HEAD~
+
+# make the desired edits
+
+git add .
+git commit -c ORIG_HEAD
+```
+
 ## Display logs
 
 #### Display commits on single line with graph of commits on left
@@ -47,7 +58,7 @@ git log --oneline --graph
 
 #### List all local unpushed commits
 
-```bash
+```
 git log --branches --not --remotes
 ```
 
@@ -56,6 +67,8 @@ git log --branches --not --remotes
 ```
 git shortlog -s -n
 ```
+
+## Manage .gitconfig
 
 #### List configs from global .gitconfig
 
