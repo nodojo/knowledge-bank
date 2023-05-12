@@ -46,24 +46,41 @@ git push -u origin your-branch-name
 git checkout master && git pull && git checkout your-branch-name && git rebase master
 ```
 
-#### Undo commit(s)
+## Undo / Edit commit(s)
+
+#### Undo the last commit
+
+```bash
+git reset --hard HEAD^
+```
+
+#### Undo the last two commits
+
+```bash
+git reset --hard HEAD~2
+```
+
+#### Force push local branch with reverted commit(s) to remote
 
 ```
-git reset --hard HEAD^                # remove previous commit from local branch
-git reset --hard HEAD~2               # remove previous two commits from local branch
-
-git push origin +HEAD                 # force push local branch with reverted commit to remote
+git push origin +HEAD
 ```
 
 #### Undo then redo a commit
 
-```
+```bash
 git reset HEAD~
 
 # make the desired edits
 
 git add .
 git commit -c ORIG_HEAD
+```
+
+#### Edit message of unpushed commit
+
+```bash
+git commit --amend -m 'new message goes here'
 ```
 
 ## Display logs
