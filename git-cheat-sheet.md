@@ -1,11 +1,23 @@
 # Git Cheat Sheet
 
-#### List branches
+## List branches
 
+#### List only local branches
+
+```bash
+git branch
 ```
-git branch                          # list only local branches
-git branch -r                       # list only remote branches
-git branch -a                       # list remote and local branches
+
+#### List only remote branches
+
+```bash
+git branch -r
+```
+
+#### List remote and local branches
+
+```bash
+git branch -a
 ```
 
 #### Delete branch
