@@ -19,12 +19,18 @@ git branch -r
 ```bash
 git branch -a
 ```
+## Delete branch
 
-#### Delete branch
+#### Delete local branch
 
+```bash
+git branch -d branch-name-goes-here
 ```
-git branch -d your-branch-name                    # delete local branch
-git push origin --delete your-branch-name         # delete remote branch
+
+#### Delete remote branch
+
+```bash
+git push origin --delete branch-name-goes-here
 ```
 
 #### Create branch and set upstream remote
