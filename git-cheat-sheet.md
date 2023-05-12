@@ -135,12 +135,18 @@ git config --global alias.st status                   # example changes status t
 git config --global --unset alias.st
 ```
 
-#### Change to a new remote origin
+## Manage remotes
 
+#### Change to a new remote origin (repository) using ssh
+
+```bash
+git remote set-url origin git@github.com:repo-name-goes-here
 ```
-git remote -v                                                                 # display current fetch / pull origins
-git remote set-url origin git@github.com:acst/DecisionInsite.Maps.git         # set remote to new origin
-git remote -v                                                                 # verify remote origins have been properly set
+
+#### Verify update by displaying fetch and push origins
+
+```bash
+git remote -v
 ```
 
 
