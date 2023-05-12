@@ -24,23 +24,23 @@ git branch -a
 #### Delete local branch
 
 ```bash
-git branch -d branch-name-goes-here
+git branch -d your-branch-name
 ```
 
 #### Delete remote branch
 
 ```bash
-git push origin --delete branch-name-goes-here
+git push origin --delete your-branch-name
 ```
 
-#### Create branch and set upstream remote
+## Create branch and set upstream remote
 
 ```
 git checkout -b your-branch-name
 git push -u origin your-branch-name
 ```
 
-#### Update branch with new changes on master (includes rebase)
+## Update branch with new changes on master (includes rebase)
 
 ```
 git checkout master && git pull && git checkout your-branch-name && git rebase master
