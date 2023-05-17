@@ -111,6 +111,12 @@ git shortlog -s -n
 git config --global --list
 ```
 
+#### List configs and their origin(s)
+
+```
+git config --list --show-origin
+```
+
 #### Open .gitconfig in Notepad (Windows)
 
 ```
