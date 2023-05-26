@@ -33,7 +33,7 @@ npm config ls -l                # list configs and origins (windows)
 npm install                     # install all packages listed in package.json
 npm i                           # alias for npm install
 
-npm i . -g                # verify package installs and works (before publish)
+npm i . -g                      # verify package installs and works (before publish)
 
 npm i --production              # install dependencies, omit devDependencies
 
