@@ -48,6 +48,14 @@ npm rebuild -g
 - Per-user .npmrc:  `C:\Users\%username%\.npmrc`
 - Built-in .npmrc:  `C:\Program Files\nodejs\node_modules\npm\npmrc`
 
+## Test package installation from node cli
+
+```bash
+node
+> require('package-name')    # output any logs / errors from package
+> .exit                      # exit node cli
+```
+
 
 
 
