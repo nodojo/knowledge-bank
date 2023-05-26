@@ -2,9 +2,9 @@
 
 ### Get help from the command line (*[npm-help](https://docs.npmjs.com/cli/help)*)
 ```bash
-npm help            # show all available options
-npm help {command}  # help for a specific command
-npm {command} -h    # view the parameters for a command        
+npm help                # show all available options
+npm help {command}      # help for a specific command
+npm {command} -h        # view the parameters for a command        
 ```
 
 ### Enable command auto-completion 
@@ -30,24 +30,24 @@ npm config ls -l                # list configs and origins (windows)
 
 ### Install from various sources (*[npm-install](https://docs.npmjs.com/cli/install.html)*)
 ```bash
-npm install                     # install all packages listed in package.json
-npm i                           # alias for npm install
+npm install                      # install all packages listed in package.json
+npm i                            # alias for npm install
 
-npm i . -g                      # verify package installs and works (before publish)
+npm i . -g                       # verify package installs and works (before publish)
 
-npm i --production              # install dependencies, omit devDependencies
+npm i --production               # install dependencies, omit devDependencies
 
-npm i {package} --save-prod     # install package in dependencies
-npm i {package} -P              # shorthand to install package in dependencies
-npm i {package} --save-dev      # install package in devDependencies
-npm i {package} -D              # shorthand to install package in devDependencies
+npm i {package} --save-prod      # install package in dependencies
+npm i {package} -P               # shorthand to install package in dependencies
+npm i {package} --save-dev       # install package in devDependencies
+npm i {package} -D               # shorthand to install package in devDependencies
 
 # note: the order the package name and the flag are in does not effect the command
 
-npm i --save-prod {package}     # install package in dependencies
-npm i -P {package}              # shorthand to install package in dependencies
-npm i --save-dev {package}      # install package in devDependencies
-npm i -D {package}              # shorthand to install package in devDependencies
+npm i --save-prod {package}      # install package in dependencies
+npm i -P {package}               # shorthand to install package in dependencies
+npm i --save-dev {package}       # install package in devDependencies
+npm i -D {package}               # shorthand to install package in devDependencies
 
 npm i {package}                  # install a single, specific package
 npm i {package} --global         # install globally
@@ -96,7 +96,8 @@ npm link helloworld     # install helloworld package via symlink (into project's
 from the package folder. This creates a symlink in the global folder for that package. You will see the reference when using:
 ```bash
 npm list -g --depth=0
-# OR
+
+# alternate command
 npm outdated -g
 ```
 You can now run package from the command line or include it in any project with `require`. Alternatively, you also can declare dependencies by filepath in `package.json` like this:
@@ -135,6 +136,7 @@ npm run {script-name}   # run a specific script
 ```bash
 npm version 1.2.3       # specify the new version (here it is 1.2.3.)
 npm version patch       # increment version patch number
+
 # increment patch, create commit message, %s will be replaced with the new version 
 npm version patch -m "Upgrade to version %s"
 ```
@@ -148,20 +150,20 @@ npm rebuild             # rebuild C++ addons (only on major version changes)
 
 ### Manage packages (*[npm-ls](https://docs.npmjs.com/cli/ls.html)*, *[npm-prune](https://docs.npmjs.com/cli-commands/prune.html)*, *[npm-dedupe](https://docs.npmjs.com/cli/dedupe)*, *[npm-cache](https://docs.npmjs.com/cli-commands/cache.html)*)
 ```bash
-npm ls              # list installed packages (extraneous = no longer referenced)
-npm ls -g           # list globally installed packages
-npm list            # alias for npm ls
-npm list --depth=0  # output top-level-only packages (not sub-packages)
+npm ls                  # list installed packages (extraneous = no longer referenced)
+npm ls -g               # list globally installed packages
+npm list                # alias for npm ls
+npm list --depth=0      # output top-level-only packages (not sub-packages)
 
-npm home {package}  # open a package's homepage
-npm docs {package}  # open a package's GitHub repository
-npm bugs {package}  # open a package's current list of issues
+npm home {package}      # open a package's homepage
+npm docs {package}      # open a package's GitHub repository
+npm bugs {package}      # open a package's current list of issues
 
-npm prune           # uninstall all extraneous packages
-npm dedupe          # remove duplicate packages from node_modules
+npm prune               # uninstall all extraneous packages
+npm dedupe              # remove duplicate packages from node_modules
 
-npm cache ls        # list packages in cache
-npm cache clean -f  # clean npm cache
+npm cache ls            # list packages in cache
+npm cache clean -f      # clean npm cache
 ```
 
 ### Updating packages (*[npm-update](https://docs.npmjs.com/cli/update)*)
