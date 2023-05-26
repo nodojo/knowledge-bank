@@ -206,6 +206,12 @@ npm search {package}    # packages being published to npm can't already exist
 
 *[Search packages by quality score](https://npms.io/)*, *[Search packages by Google ranking](http://anvaka.github.io/npmrank/online/)*
 
+*[NPM 7 is now generally available -> breaking changes](https://github.blog/2021-02-02-npm-7-is-now-generally-available/#breaking-changes)*
+
+*[How to find .npmrc file locations](https://weekendprojects.dev/posts/where-to-find-nprc-file-locations/)*
+
+*[How to completely remove node.js from windows](https://www.geeksforgeeks.org/how-to-completely-remove-node-js-from-windows/)*
+
 ## Useful [npm Docs](https://docs.npmjs.com/)
 
 *[cli commands](https://docs.npmjs.com/cli/v8/commands)*
