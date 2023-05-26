@@ -41,3 +41,15 @@ Refresh symlink package to project connection (created by [npm-link](https://doc
 ```bash
 npm rebuild -g
 ```
+
+## Typical .npmrc locations (Windows)
+
+- Global .npmrc:  `C:\Users\%username%\AppData\Roaming\npm\etc\npmrc`
+- Per-user .npmrc:  `C:\Users\%username%\.npmrc`
+- Built-in .npmrc:  `C:\Program Files\nodejs\node_modules\npm\npmrc`
+
+
+
+
+
+
