@@ -148,3 +148,11 @@ git config --global color.status.changed "cyan normal bold"
    ```powershell
    Set-Location C:\Projects
    ```
+   
+## Resources
+
+- [Windows PowerShell Commands Cheat Sheet](https://www.addictivetips.com/net-admin/powershell-commands/)
+- [Microsoft PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-5.1)
+- [PowerShell Notes for Professional Book](https://goalkicker.com/PowerShellBook/)
+- [PowerShell Tutorial](https://www.educba.com/data-science/data-science-tutorials/powershell-tutorial/)
+- [Windows PowerShell DZone RefCard](https://dzone.com/refcardz/windows-powershell)
