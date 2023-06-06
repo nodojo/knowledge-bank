@@ -128,3 +128,23 @@ Usage example
 ```powershell
 git config --global color.status.changed "cyan normal bold"
 ```
+
+## Set the launch directory
+
+1. Create a new profile
+   
+   ```powershell
+   New-Item -path $profile -type file –force
+   ```
+   
+2. Open the new profile in Notepad
+   
+   ```powershell
+   Notepad $profile
+   ```
+   
+3. Add this line to set the start location and then save it\
+   
+   ```powershell
+   Set-Location C:\Projects
+   ```
