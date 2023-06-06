@@ -2,7 +2,7 @@
 
 ## Find local resources
 
-Display path to powershell.exe
+Display path to `powershell.exe`
 ```powershell
 (Get-Process -Id $pid).Path
 ```
@@ -100,4 +100,31 @@ Restart-Computer
 Force immediate restart
 ```powershell
 Restart-Computer -Force
+```
+
+## Customize output color for Git
+
+### Option 1
+
+Add the following snippet to your `.gitconfig` file
+
+```
+[color]
+   ui = true
+[color "status"]
+   changed = red bold
+   untracked = red bold
+   added = green bold
+```
+
+### Option 2
+
+```powershell
+git config color-to-update "foreground-color background-color attribute"
+```
+
+Usage example
+
+```powershell
+git config --global color.status.changed "cyan normal bold"
 ```
