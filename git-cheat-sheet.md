@@ -199,6 +199,7 @@ git push --delete origin your-tag-name
 
 ## Resources
 
+- [Git CheatSheet (LeCoupa)](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/git.sh)
 - [Bash CheatSheet (LeCoupa)](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh)
 
 
