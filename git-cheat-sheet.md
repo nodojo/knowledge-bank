@@ -54,6 +54,12 @@ git checkout master && git pull && git checkout your-branch-name && git rebase m
 git reset --hard HEAD^
 ```
 
+#### Undo a completed merge
+
+```bash
+git reset --merge HEAD~1
+```
+
 #### Undo the last two commits
 
 ```bash
