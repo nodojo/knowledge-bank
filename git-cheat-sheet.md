@@ -161,6 +161,14 @@ git remote set-url origin git@github.com:repo-name-goes-here
 git remote -v
 ```
 
+#### [Switching remote URLs from SSH to HTTPS](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+
+```bash
+git remote -v                                                        # list existing remotes
+git remote set-url origin https://github.com/OWNER/REPOSITORY.git    # switch remote from ssh to https
+git remote -v                                                        # verify remote has changed
+```
+
 ## Manage tags
 
 #### List local tags
