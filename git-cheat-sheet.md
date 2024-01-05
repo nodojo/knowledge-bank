@@ -4,32 +4,33 @@
 
 #### List only local branches
 
-```bash
+```
 git branch
 ```
 
 #### List only remote branches
 
-```bash
+```
 git branch -r
 ```
 
 #### List remote and local branches
 
-```bash
+```
 git branch -a
 ```
+
 ## Delete branch
 
 #### Delete local branch
 
-```bash
+```
 git branch -d your-branch-name
 ```
 
 #### Delete remote branch
 
-```bash
+```
 git push origin --delete your-branch-name
 ```
 
@@ -50,19 +51,19 @@ git checkout master && git pull && git checkout your-branch-name && git rebase m
 
 #### Undo the last commit
 
-```bash
+```
 git reset --hard HEAD^
 ```
 
 #### Undo a completed merge
 
-```bash
+```
 git reset --merge HEAD~1
 ```
 
 #### Undo the last two commits
 
-```bash
+```
 git reset --hard HEAD~2
 ```
 
@@ -74,7 +75,7 @@ git push origin +HEAD
 
 #### Undo then redo a commit
 
-```bash
+```
 git reset HEAD~
 
 # make the desired edits
@@ -85,7 +86,7 @@ git commit -c ORIG_HEAD
 
 #### Edit message of unpushed commit
 
-```bash
+```
 git commit --amend -m 'new message goes here'
 ```
 
@@ -157,13 +158,13 @@ git remote set-url origin git@github.com:repo-name-goes-here
 
 #### Verify update by displaying fetch and push origins
 
-```bash
+```
 git remote -v
 ```
 
 #### [Switching remote URLs from SSH to HTTPS](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
 
-```bash
+```
 git remote -v                                                        # list existing remotes
 git remote set-url origin https://github.com/OWNER/REPOSITORY.git    # switch remote from ssh to https
 git remote -v                                                        # verify remote has changed
@@ -173,7 +174,7 @@ git remote -v                                                        # verify re
 
 #### List local tags
 
-```bash
+```
 git tag
 ```
 
@@ -181,7 +182,7 @@ git tag
 
 1. Create a new branch from tag
 
-```bash
+```
 git checkout -b your-new-branch-name existing-tag-name
 ```
 
@@ -189,27 +190,31 @@ git checkout -b your-new-branch-name existing-tag-name
 
 3. Create a new tag containing your changes
 
-```bash
+```
 git tag -a -m 'new tag message goes here' your-new-tag-name
 ```
 
 4. Push the newly created tag to the remote repository
 
-```bash
+```
 git push origin your-new-tag-name
 ```
 
 #### Delete local tag
 
-```bash
+```
 git tag -d your-tag-name
 ```
 
 #### Delete remote tag
 
-```bash
+```
 git push --delete origin your-tag-name
 ```
+
+## Articles of Interest
+
+- [How to navigate to the earliest commit in a repository](https://stackoverflow.com/a/49647826)
 
 ## Resources
 
