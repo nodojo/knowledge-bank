@@ -1,7 +1,7 @@
 
 /**
- * Realm
- ***********/
+ * .NET MVC
+ *************/
 public JsonResult SiteMap()
 {
    var controllerActions = new List<Dictionary<string, string>>();
@@ -25,7 +25,7 @@ public JsonResult SiteMap()
 
 
 /**
- * Missioninsite
+ * .NET Core
  ******************/
 public JsonResult SiteMap()
 {
